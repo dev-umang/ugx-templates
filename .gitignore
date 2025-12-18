@@ -1,14 +1,14 @@
 # Ignore files inside template folders
-# *template*/node_modules/
-# *template*/.expo/
-# *template*/dist/
-# *template*/build/
-# *template*/.next/
-# *template*/out/
-# *template*/.turbo/
-# *template*/coverage/
-# *template*/.DS_Store
-# *template*/npm-debug.log*
-# *template*/yarn-debug.log*
-# *template*/yarn-error.log*
-# *template*/.env*.local
+*template*/node_modules/
+*template*/.expo/
+*template*/dist/
+*template*/build/
+*template*/.next/
+*template*/out/
+*template*/.turbo/
+*template*/coverage/
+*template*/.DS_Store
+*template*/npm-debug.log*
+*template*/yarn-debug.log*
+*template*/yarn-error.log*
+*template*/.env*.local
