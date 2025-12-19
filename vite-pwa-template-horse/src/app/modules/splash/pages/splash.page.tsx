@@ -9,7 +9,7 @@ const SplashPage: FC = () => {
     setTimeout(() => {
       nav("/dashboard");
     }, 1000);
-  }, []);
+  }, [nav]);
 
   return (
     <Layout className="h-screen flex items-center justify-center">
