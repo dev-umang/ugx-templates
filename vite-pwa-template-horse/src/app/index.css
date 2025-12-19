@@ -1,0 +1,79 @@
+@layer antd, theme, base, components, utilities;
+
+@import "tailwindcss/theme.css" layer(theme);
+@import "tailwindcss/utilities.css" layer(utilities);
+
+@import "tailwindcss";
+@plugin 'tailwind-scrollbar';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --spacing-default: 0.5rem;
+  --spacing-xs: 0.25rem;
+  --spacing-layout: 90rem;
+
+  --color-muted: #5f5f5fff;
+  --color-active: #32b0cd;
+}
+
+@layer utilities {
+  .scrollbar-hide {
+    -ms-overflow-style: none; /* IE */
+    scrollbar-width: none; /* Firefox */
+  }
+
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+    width: 0px; /* <- your custom width */
+    height: 0px; /* <- your custom height */
+  }
+
+  /* Track color */
+  .scrollbar-track-white {
+    --scrollbar-track: transparent;
+    --scrollbar-thumb: oklch(0.65 0.18 134.64);
+  }
+
+  /* Shake animation */
+  @keyframes shake {
+    0% {
+      transform: translateX(0);
+    }
+    10% {
+      transform: translateX(-8px);
+    }
+    20% {
+      transform: translateX(8px);
+    }
+    30% {
+      transform: translateX(-6px);
+    }
+    40% {
+      transform: translateX(6px);
+    }
+    50% {
+      transform: translateX(-4px);
+    }
+    60% {
+      transform: translateX(4px);
+    }
+    70% {
+      transform: translateX(-2px);
+    }
+    80% {
+      transform: translateX(2px);
+    }
+    90% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+  .animate-shake {
+    animation: shake 1s cubic-bezier(0.36, 0.07, 0.19, 0.97) 5;
+    -webkit-animation: shake 1s cubic-bezier(0.36, 0.07, 0.19, 0.97) 5;
+  }
+}
