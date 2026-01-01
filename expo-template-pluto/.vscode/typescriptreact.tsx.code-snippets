@@ -1,0 +1,107 @@
+{
+  "theme": {
+    "prefix": "theme",
+    "body": ["const theme = useTheme();"],
+    "description": "Insert theme hook with application custom theme"
+  },
+  "screen": {
+    "prefix": "screen",
+    "body": [
+      "import { FC } from 'react';",
+      "",
+      "import { StyleSheet, View } from 'react-native';",
+      "",
+      "const ${1:ScreenName}: FC = () => {",
+      "  return <View style={s.container}>$2</View>;",
+      "};",
+      "",
+      "export default ${1:ScreenName};",
+      "",
+      "const s = StyleSheet.create({",
+      "  container: {",
+      "    flex: 1,",
+      "  },",
+      "});",
+      ""
+    ]
+  },
+  "page": {
+    "prefix": "page",
+    "body": [
+      "import { FC } from 'react';",
+      "",
+      "import { ScrollView, StyleSheet } from 'react-native';",
+      "",
+      "const ${1:PageName}: FC = () => {",
+      "  return <ScrollView style={s.container}>$2</ScrollView>;",
+      "};",
+      "",
+      "export default ${1:PageName};",
+      "",
+      "const s = StyleSheet.create({",
+      "  container: {",
+      "    flex: 1,",
+      "  },",
+      "});",
+      ""
+    ]
+  },
+  "functional-component": {
+    "prefix": "fc",
+    "body": [
+      "import { FC } from 'react';",
+      "import { View ,StyleSheet} from 'react-native';",
+      "import { UIText } from '@lib/ui';",
+      "",
+      "type Props = {",
+      "  $2",
+      "}",
+      "",
+      "const ${1:Component}: FC<Props> = () => {",
+      "  return (",
+      "    <View>",
+      "<UIText> ${1:Component} </UIText>",
+      "      $3",
+      "    </View>",
+      "  );",
+      "};",
+      "",
+      "const s = StyleSheet.create({ });",
+      "",
+      "export default ${1:Component};"
+    ],
+    "description": "Create a functional component with FC<Props>"
+  },
+  "simple-hook": {
+    "prefix": "hook",
+    "body": [
+      "export const use${1:HookName} = () => {",
+      "  return {};",
+      "};",
+      ""
+    ],
+    "description": "Create a simple custom hook with state and effect"
+  },
+  "layout": {
+    "prefix": "layout",
+    "body": [
+      "import { ScrollView, StyleSheet } from 'react-native';",
+      "import type { FC } from 'react';",
+      "import { Stack } from 'expo-router';",
+      "",
+      "const ${1:Layout}: FC = () => {",
+      "  return <ScrollView style={s.container}>",
+      "    <Stack />",
+      "  </ScrollView>;",
+      "};",
+      "",
+      "export default ${1:Layout};",
+      "const s = StyleSheet.create({",
+      "  container: {",
+      "    flex: 1,",
+      "  },",
+      "});"
+    ],
+    "description": "Create a blank layout"
+  }
+}
