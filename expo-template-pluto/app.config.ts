@@ -46,12 +46,6 @@ export default (): ExpoConfig => {
       bundleIdentifier,
       infoPlist: {
         ITSAppUsesNonExemptEncryption: false,
-        NSCameraUsageDescription:
-          "This app uses camera to capture and analyze images with AI.",
-        NSMicrophoneUsageDescription:
-          "This app uses microphone for voice commands and AI interactions.",
-        NSPhotoLibraryUsageDescription:
-          "This app needs access to photo library to process images with AI.",
         CFBundleURLTypes: [
           {
             CFBundleURLSchemes: [iosUrlScheme, bundleIdentifier],
@@ -72,30 +66,16 @@ export default (): ExpoConfig => {
       predictiveBackGestureEnabled: false,
       googleServicesFile: androidGoogleFile,
       package: packageName,
-      permissions: [
-        "CAMERA",
-        "RECORD_AUDIO",
-        "READ_EXTERNAL_STORAGE",
-        "WRITE_EXTERNAL_STORAGE",
-        "INTERNET",
-        "ACCESS_NETWORK_STATE",
-      ],
+      permissions: [],
     },
 
     web: {
       output: "static",
-      favicon: "./assets/icons/favicon.ico",
+      favicon: "./assets/icons/favicon.png",
     },
 
     plugins: [
       "expo-router",
-      "expo-web-browser",
-      [
-        "@react-native-google-signin/google-signin",
-        {
-          iosUrlScheme,
-        },
-      ],
       [
         "expo-splash-screen",
         {
@@ -120,8 +100,7 @@ export default (): ExpoConfig => {
       environment,
       apiUrl: process.env.EXPO_PUBLIC_API_URL,
       eas: {
-        // projectId: "5404aa42-a859-4e4f-a749-a5b7b1bee754",
-        projectId: "c36a33be-a708-4140-9bf7-dbbc9a05aeee",
+        projectId: "your-eas-project-id",
       },
       iosClientId: iosUrlScheme,
       webClientId: process.env.EXPO_PUBLIC_GOOGLE_WEB_CLIENT_ID,

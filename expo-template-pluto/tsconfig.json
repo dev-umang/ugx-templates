@@ -3,12 +3,30 @@
   "compilerOptions": {
     "strict": true,
     "paths": {
-      "@common/*": ["./src/common/*"],
-      "@components/*": ["./src/components/*"],
-      "@modules/*": ["./src/modules/*"],
-      "@assets/*": ["./assets/*"],
-      "@configs/*": ["./src/configs/*"],
-      "@lib/*": ["./src/lib/*"]
+      "@common/*": [
+        "./src/common/*"
+      ],
+      "@components/*": [
+        "./src/components/*"
+      ],
+      "@modules/*": [
+        "./src/modules/*"
+      ],
+      "@assets/*": [
+        "./assets/*"
+      ],
+      "@configs/*": [
+        "./src/configs/*"
+      ],
+      "@lib/*": [
+        "./src/lib/*"
+      ]
     }
-  }
+  },
+  "include": [
+    "**/*.ts",
+    "**/*.tsx",
+    ".expo/types/**/*.ts",
+    "expo-env.d.ts"
+  ]
 }
