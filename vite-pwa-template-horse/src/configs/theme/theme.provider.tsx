@@ -90,7 +90,7 @@ const ThemeProvider: FC<Props> = ({ children }) => {
       }}
     >
       <div
-        className={`${darkMode ? "dark" : "light"} dark:scrollbar-thumb-neutral-700 scrollbar-track-neutral-950`}
+        className={`${darkMode ? "dark" : "light"} `}
       >
         {children}
       </div>

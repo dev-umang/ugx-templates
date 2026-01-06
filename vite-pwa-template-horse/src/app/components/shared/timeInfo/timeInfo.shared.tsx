@@ -48,7 +48,7 @@ const TimeInfo: FC = () => {
     return (
       <Space orientation="vertical">
         <Space>
-          <Clock2 />
+          <Clock2 size={16} />
           <div className="text-sm font-semibold">{time.full}</div>
         </Space>
         <Space>
@@ -67,7 +67,7 @@ const TimeInfo: FC = () => {
       content={timeInfo}
     >
       {time && (
-        <Button icon={<Clock2 />} type="text">
+        <Button icon={<Clock2 size={16} />} type="text">
           {time.compact}
         </Button>
       )}
