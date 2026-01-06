@@ -26,7 +26,7 @@ const MainHeader: FC = () => {
   return (
     <Header>
       <div className="flex items-center justify-between px-4 mx-auto h-14">
-        <h2>LOGO</h2>
+        <h2 className="text-xl font-bold">LOGO</h2>
         {SecondPart}
       </div>
     </Header>

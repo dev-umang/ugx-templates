@@ -18,10 +18,10 @@ const plugins: PluginOption[] = [
     },
     minify: false,
     manifest: {
-      name: "GTX Tenant Admin",
-      short_name: "GTX Tenant",
+      name: "Template Anglo Horse",
+      short_name: "Template Anglo Horse",
       description:
-        "Application to view tenant information and manage tenant settings for GT-X Project.",
+        "A template project for building web applications using React, Vite, and TypeScript.",
       theme_color: "#ffffff",
     },
 

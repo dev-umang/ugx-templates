@@ -4,6 +4,7 @@ import NavHeader from "./headers/nav.header";
 import Loader from "./loader/loader";
 import Page from "./page/page";
 import ProfilePopover from "./profile/profile.popover";
+import TenantSelector from "./selectors/tenant.selector";
 import TimeInfo from "./timeInfo/timeInfo.shared";
 
 export {
@@ -14,4 +15,5 @@ export {
   Loader,
   Page,
   AppInfo,
+  TenantSelector,
 };
