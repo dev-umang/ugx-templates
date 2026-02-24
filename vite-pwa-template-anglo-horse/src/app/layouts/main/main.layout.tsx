@@ -16,9 +16,9 @@ const MainLayout: FC = () => {
       <NavHeader />
       <Layout
         style={{ maxHeight: "calc(100vh - 56.8px)", overflow: "auto" }}
-        className=""
+        className="container mx-auto"
       >
-        <Content className="p-default max-w-layout mx-auto scrollbar-thin scrollbar-thumb-neutral-200 hover:scrollbar-thumb-neutral-300 scrollbar-track-white dark:scrollbar-thumb-neutral-800 dark:scrollbar-track-black dark:hover:scrollbar-thumb-neutral-700">
+        <Content className="p-default scrollbar-thin scrollbar-thumb-neutral-200 hover:scrollbar-thumb-neutral-300 scrollbar-track-white dark:scrollbar-thumb-neutral-800 dark:scrollbar-track-black dark:hover:scrollbar-thumb-neutral-700">
           <Outlet />
         </Content>
       </Layout>
